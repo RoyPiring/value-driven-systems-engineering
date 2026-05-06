@@ -1,14 +1,3 @@
----
-nextwork_uuid: bae88da1-febb-4622-bad0-5a4ee5d381f5
-original_filename: legendary-bae88da1-febb-4622-bad0-5a4ee5d381f5.md
-migrated_to: governance-systems-engineering/hipaa-ai-intake-system.md
-migrated_at: 2026-05-04
-schema: nextwork-generator
-reclassified_at: 2026-05-04
-reclassified_from: governance-systems-engineering/hipaa-ai-intake-system.md
-reclassified_to: value-driven-systems-engineering/hipaa-ai-intake-system.md
----
-
 <img src="https://cdn.prod.website-files.com/677c400686e724409a5a7409/6790ad949cf622dc8dcd9fe4_nextwork-logo-leather.svg" alt="NextWork" width="300" />
 
 # Build a HIPAA-Aware AI Intake System

@@ -1,14 +1,3 @@
----
-nextwork_uuid: 9a825b41-c8eb-4150-8b3b-b6e4eb911aaf
-original_filename: legendary-9a825b41-c8eb-4150-8b3b-b6e4eb911aaf.md
-migrated_to: advisor-smb-engineering/broker-lead-qualification-repo.md
-migrated_at: 2026-05-04
-schema: nextwork-generator
-reclassified_at: 2026-05-04
-reclassified_from: advisor-smb-engineering/broker-lead-qualification-repo.md
-reclassified_to: value-driven-systems-engineering/broker-lead-qualification-repo.md
----
-
 <img src="https://cdn.prod.website-files.com/677c400686e724409a5a7409/6790ad949cf622dc8dcd9fe4_nextwork-logo-leather.svg" alt="NextWork" width="300" />
 
 # Scaffold a Broker-Facing Lead Qual Repo
