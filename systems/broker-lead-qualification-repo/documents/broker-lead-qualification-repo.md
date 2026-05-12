@@ -159,7 +159,7 @@ Updating contact status ensures progress is visible and follow-ups are structure
 
 ![Image](https://learn.nextwork.org/refreshed_maroon_timid_jujube/uploads/9a825b41-c8eb-4150-8b3b-b6e4eb911aaf_kw7m3xp2)
 
-### Round Rock/Cedar Park variant at $425K median — payback math still holds
+### Round Rock/Cedar Park variant at $425K median, payback math still holds
 
 The model holds across different scenarios.
 

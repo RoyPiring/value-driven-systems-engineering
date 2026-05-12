@@ -1,6 +1,6 @@
 # Value-Driven Systems Engineering
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-1B4332?style=flat-square&labelColor=0d1117)](./LICENSE) [![Systems](https://img.shields.io/badge/systems-2-2F5233?style=flat-square&labelColor=0d1117)](./INDEX.md) [![Updated](https://img.shields.io/badge/updated-2026--05--10-264653?style=flat-square&labelColor=0d1117)](./INDEX.md)
+[![License: MIT](https://img.shields.io/badge/license-MIT-1B4332?style=flat-square&labelColor=0d1117)](./LICENSE) [![Systems](https://img.shields.io/badge/systems-2-2F5233?style=flat-square&labelColor=0d1117)](./INDEX.md) [![Updated](https://img.shields.io/badge/updated-2026--05--11-264653?style=flat-square&labelColor=0d1117)](./INDEX.md)
 
 > *What does a small-to-medium business operator pay for?*
 
@@ -23,7 +23,7 @@ Customer-paid solutions and strategy for the operators of small and growing busi
 
 ## Systems
 
-- **[Scaffold a Broker-Facing Lead Qual Repo](./systems/broker-lead-qualification-repo/)** — Broker-Facing · CRM · One-Page · ROI
-- **[Build a HIPAA-Aware AI Intake System](./systems/hipaa-ai-intake-system/)** — HIPAA-Aware · AI · AWS · Bedrock
+- **[Scaffold a Broker-Facing Lead Qual Repo](./systems/broker-lead-qualification-repo/)**, Broker-Facing · CRM · One-Page · ROI
+- **[Build a HIPAA-Aware AI Intake System](./systems/hipaa-ai-intake-system/)**, HIPAA-Aware · AI · AWS · Bedrock
 
 

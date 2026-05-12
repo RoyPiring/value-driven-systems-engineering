@@ -4,9 +4,9 @@
 
 ## Overview
 
-This project reframes an AI system into a broker-facing artifact that prioritizes ROI, compliance, and implementation clarity.
-
-The objective is to remove ambiguity for a non-technical buyer. Instead of leading with architecture, the repository leads with cost, value, and risk posture so a broker can quickly decide whether the system is worth a conversation.
+-T-h-i-s- -p-r-o-j-e-c-t- -r-e-f-r-a-m-e-s- -a-n- -A-I- -s-y-s-t-e-m- -i-n-t-o- -a- -b-r-o-k-e-r---f-a-c-i-n-g- -a-r-t-i-f-a-c-t- -t-h-a-t- -p-r-i-o-r-i-t-i-z-e-s- -R-O-I-,- -c-o-m-p-l-i-a-n-c-e-,- -a-n-d- -i-m-p-l-e-m-e-n-t-a-t-i-o-n- -c-l-a-r-i-t-y-.----
+----
+-T-h-e- -o-b-j-e-c-t-i-v-e- -i-s- -t-o- -r-e-m-o-v-e- -a-m-b-i-g-u-i-t-y- -f-o-r- -a- -n-o-n---t-e-c-h-n-i-c-a-l- -b-u-y-e-r-.- -I-n-s-t-e-a-d- -o-f- -l-e-a-d-i-n-g- -w-i-t-h- -a-r-c-h-i-t-e-c-t-u-r-e-,- -t-h-e- -r-e-p-o-s-i-t-o-r-y- -l-e-a-d-s- -w-i-t-h- -c-o-s-t-,- -v-a-l-u-e-,- -a-n-d- -r-i-s-k- -p-o-s-t-u-r-e- -s-o- -a- -b-r-o-k-e-r- -c-a-n- -q-u-i-c-k-l-y- -d-e-c-i-d-e- -w-h-e-t-h-e-r- -t-h-e- -s-y-s-t-e-m- -i-s- -w-o-r-t-h- -a- -c-o-n-v-e-r-s-a-t-i-o-n-.-
 
 The architecture is built across **9 phases**, anchored by **Building the Foundation: Repo Structure and Tool Verification** on the input side and **What This Repo Proves: From 'I Built an AI Thing' to a Pitch Deck Brokers Read** at the end. Each phase is listed in the Implementation section below.
 
@@ -104,7 +104,7 @@ This system is built across **9 phases**:
 5. **Proving You Know the Rules Before the Broker Asks: Compliance Posture and ADR-001**
 6. **Infrastructure Stubs, Shell Scripts, and Claim-Evidence Mapping**
 7. **Taking It Live: Pilot Contacts and the First Real Pitch Message**
-8. **Scaling the Math for a 10-Agent Suburban Brokerage**
+8. **Scaling the Math for a 10-Agent Suburban Brokerage**, -.
 9. **What This Repo Proves: From 'I Built an AI Thing' to a Pitch Deck Brokers Read**
 
 For the full walkthrough with screenshots and step-by-step content, see [`documents/broker-lead-qualification-repo.md`](./documents/broker-lead-qualification-repo.md).
