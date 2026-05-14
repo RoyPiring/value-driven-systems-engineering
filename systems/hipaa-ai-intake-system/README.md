@@ -6,7 +6,7 @@
 
 This project builds a HIPAA-aware repository, clinic-intake-ai, as the foundation for an AI-powered patient intake system.
 
-The goal is to streamline intake for a small healthcare practice while keeping costs under $100 per provider per month. The system is designed from the start around compliance, ensuring Protected Health Information (PHI) is never exposed during development or testing.
+The goal is to automate triage and form-fill for a small healthcare practice while keeping costs under $100 per provider per month. The system is designed from the start around compliance, ensuring Protected Health Information (PHI) is never exposed during development or testing.
 
 The architecture is built across **8 phases**, anchored by **Scaffolding a Production-Grade Repository** on the input side and **Two-Page Leave-Behind for Practice Managers** at the end. Each phase is listed in the Implementation section below.
 
