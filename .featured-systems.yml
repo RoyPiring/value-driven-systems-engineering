@@ -1,0 +1,45 @@
+lens: value-driven-systems-engineering
+featured_enabled: auto
+threshold: 1
+scored_at: '2026-05-18'
+human_pin: []
+systems:
+- slug: broker-lead-qualification-repo
+  axis_scores:
+    technical_depth: 7
+    voice: 6
+    validation: 6
+  axis_reasoning:
+    technical_depth: Nine-phase build with five-subgraph Mermaid that names real regulators
+      (TREC 535.154-155, FCC 1-to-1 Consent) and concrete inputs ($455K @ 2.85%),
+      but infrastructure is explicitly never-applied Terraform stubs so production-shape
+      is partial.
+    voice: README is direct and ROI-first, yet the supporting doc repeats `Pilot outreach
+      introduces real-world validation` verbatim across three phases and `The economics
+      primer establishes a clear cost comparison` twice, which dilutes specificity.
+    validation: Validation section is a nine-item checkmark list pointing at one document;
+      each phase has at least one screenshot, but evidence is presented as image links
+      without per-phase verification text.
+  average: 6.33
+  rationale: ROI worksheet plus TREC and FCC compliance posture sized for a non-technical
+    broker buyer
+  featured: true
+- slug: hipaa-ai-intake-system
+  axis_scores:
+    technical_depth: 8
+    voice: 7
+    validation: 6
+  axis_reasoning:
+    technical_depth: Eight-phase design with five-subgraph diagram that draws the
+      rejected OpenAI path as a blocked edge and ties a $100/provider cost-check event
+      into the intake service, showing the BAA boundary as a real architectural constraint.
+    voice: 'Names concrete decisions and tradeoffs (`Bedrock under BAA`, `OpenAI rejected:
+      no BAA`, synthetic-data-only prompts) and admits gaps honestly (`a few expected
+      artifacts are missing`), matching the brand bio cleanly.'
+    validation: Validation is a phase checklist plus screenshots, but the doc itself
+      states `no outreach has been sent` and the file count is `mostly complete`,
+      so end-to-end evidence is honest about partial coverage.
+  average: 7.0
+  rationale: BAA-gated architecture with PHI-safe prompt library and $100/provider
+    cost ceiling
+  featured: true
