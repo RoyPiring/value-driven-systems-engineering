@@ -117,7 +117,7 @@ Maintaining a shared cultural source ensures consistency while allowing flexibil
 
 A common backbone provides scripts, cultural mappings, caption generation, audio synthesis, media rendering, and validation services. Furigana overlays are generated through language-processing tools and rendered as reusable visual assets.
 
-This shared infrastructure reduces duplication and ensures that improvements benefit all production formats simultaneously.
+This shared infrastructure reduces duplication and ensures that refinements benefit all production formats simultaneously.
 
 ## Validating All Three Video Formats
 

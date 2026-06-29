@@ -125,7 +125,7 @@ This structure provides consistency across generated outreach content while main
 
 Template performance is monitored using reply-rate thresholds. Templates falling below a 15% response rate after at least ten sends are flagged for review, while templates exceeding a 30% response rate become candidates for default usage.
 
-The E5 Weekly Refinement process reviews these metrics every Sunday and proposes improvements for human evaluation. Importantly, templates are never modified automatically, preserving oversight and preventing uncontrolled content drift.
+The E5 Weekly Refinement process reviews these metrics every Sunday and proposes refinements for human evaluation. Importantly, templates are never modified automatically, preserving oversight and preventing uncontrolled content drift.
 
 ## Proving the Full Pipeline End-to-End
 

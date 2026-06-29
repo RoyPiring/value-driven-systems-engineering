@@ -128,7 +128,7 @@ Contacts are stored using initials to protect identity in a public repo. A pitch
 
 The pitch avoids technical language.
 
-It focuses on time savings, cost reduction, and workflow improvement. This ensures the message aligns with the audience and increases the chance of engagement.
+It focuses on time savings, cost reduction, and a tighter workflow. This ensures the message aligns with the audience and increases the chance of engagement.
 
 ## Drafting the Coffee-Meeting Pitch and Validating the Repo
 
