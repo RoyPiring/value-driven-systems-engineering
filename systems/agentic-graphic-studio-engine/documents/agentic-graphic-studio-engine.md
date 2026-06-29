@@ -9,7 +9,7 @@
 
 ---
 
-![Image](https://nextwork.ai/refreshed_maroon_timid_jujube/uploads/a41269c7-288d-4df7-984b-b1ddc2b2badb_bad4hqmi)
+![Design engine overview](images/01-design-engine-overview.png)
 
 ## Setting Up the Agentic Design Engine
 
