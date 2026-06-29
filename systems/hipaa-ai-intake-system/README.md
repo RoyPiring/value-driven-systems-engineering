@@ -73,9 +73,6 @@ flowchart LR
     CostCheck -- "budget event" --> IntakeSvc
 
     PracticeMgr -- "leave-behind / pitch deck" --> Readme
-class Repo,OutreachLog datastore
-class CostCheck event
-
     class Repo,OutreachLog datastore
     class PromptLib,Guardrails,IntakeSvc,Bedrock,Rejected,ADR,Conventions,Readme service
     class CostCheck event
@@ -101,7 +98,7 @@ For the full walkthrough with screenshots and step-by-step content, see [`docume
 
 ## Validation
 
-Build outcomes verified end-to-end. Each phase below is captured with screenshots, configuration, and observable behavior in [`documents/hipaa-ai-intake-system.md`](./documents/hipaa-ai-intake-system.md):
+Each build phase below is documented in [`documents/hipaa-ai-intake-system.md`](./documents/hipaa-ai-intake-system.md), with screenshots, configuration, and notes as captured during the build:
 
 - ✅ Scaffolding a Production-Grade Repository
 - ✅ Building a HIPAA-Aware Prompt Library

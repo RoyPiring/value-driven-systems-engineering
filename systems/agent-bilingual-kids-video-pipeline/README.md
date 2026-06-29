@@ -193,7 +193,6 @@ flowchart LR
     SeasonalCal --> TanabataNext
     SeasonalCal --> DailyGreetings
     SpacedRepetition -.shapes.-> SeasonalCal
-
     class NodePython,ClaudeDesktop,PiperPlus,FFmpeg,Furigana,TsukuyomiChan,SAPI5Fallback service
     class FilesystemMCP,GitMCP,SqliteMCP,FirecrawlMCP service
     class CulturalBridge,TeamCurriculum,TeamLanguageVal,TeamVisualProd,TeamAudio,TeamQA,TeamFamilyEng service
@@ -227,7 +226,7 @@ For the full walkthrough with screenshots and step-by-step content, see [`docume
 
 ## Validation
 
-Build outcomes verified end-to-end. Each phase below is captured with screenshots, configuration, and observable behavior in [`documents/26-agent-bilingual-kids-video-pipeline.md`](./documents/26-agent-bilingual-kids-video-pipeline.md):
+Each build phase below is documented in [`documents/26-agent-bilingual-kids-video-pipeline.md`](./documents/26-agent-bilingual-kids-video-pipeline.md), with screenshots, configuration, and notes as captured during the build:
 
 - ✅ The Vision: Building a Bilingual Heritage System
 - ✅ Setting Up the Voice and Environment

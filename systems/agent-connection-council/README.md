@@ -171,7 +171,6 @@ flowchart LR
     PreArtifacts -.shapes.-> CDNLayer
     PreArtifacts -.shapes.-> SupabaseCRM
     PreArtifacts -.shapes.-> ConnectionCouncil
-
     class CloudflarePages,Turnstile,KeepAliveWorker,SingleFileHTML,ContactForm,UTMCapture service
     class Vault25Agents,DraftGeneration,MarcusReview service
     class RetrieveSecret,SendsTimestamp,Resend,DomainVerify service
@@ -204,7 +203,7 @@ For the full walkthrough with screenshots and step-by-step content, see [`docume
 
 ## Validation
 
-Build outcomes verified end-to-end. Each phase below is captured with screenshots, configuration, and observable behavior in [`documents/25-agent-connection-council.md`](./documents/25-agent-connection-council.md):
+Each build phase below is documented in [`documents/25-agent-connection-council.md`](./documents/25-agent-connection-council.md), with screenshots, configuration, and notes as captured during the build:
 
 - ✅ The Problem Worth Solving
 - ✅ Architecting for the Long Game

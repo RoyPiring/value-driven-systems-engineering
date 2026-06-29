@@ -179,7 +179,6 @@ flowchart LR
     Gemini --> GeminiReview
     GeminiReview --> BiasExposure
     BiasExposure -.flags.-> AgentScoring
-
     class ClaudeDesktop,PaperDesktop,Obsidian,Firecrawl,GitWindows,Gemini service
     class FilesystemMCP,PaperMCP,FirecrawlMCP service
     class ClientSession,GrowthSession,ApprovalSession service
@@ -212,7 +211,7 @@ For the full walkthrough with screenshots and step-by-step content, see [`docume
 
 ## Validation
 
-Build outcomes verified end-to-end. Each phase below is captured with screenshots, configuration, and observable behavior in [`documents/25-agent-design-studio.md`](./documents/25-agent-design-studio.md):
+Each build phase below is documented in [`documents/25-agent-design-studio.md`](./documents/25-agent-design-studio.md), with screenshots, configuration, and notes as captured during the build:
 
 - ✅ The Vision: Building a Quality-Controlled Design Studio
 - ✅ Activating the Toolchain

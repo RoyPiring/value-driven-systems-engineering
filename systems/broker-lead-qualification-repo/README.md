@@ -4,8 +4,14 @@
 
 ## Overview
 
-This project reframes an AI system into a broker-facing artifact that prioritizes ROI, compliance, and implementation clarity.
-
+This project reframes an AI system into a broker-facing artifact that prioritizes ROI, compliance, and implementation clarity.
+
+
+
+
+
+
+
 The objective is to remove ambiguity for a non-technical buyer. Instead of leading with architecture, the repository leads with cost, value, and risk posture so a broker can quickly decide whether the system is worth a conversation.
 
 The architecture is built across **9 phases**, anchored by **Building the Foundation: Repo Structure and Tool Verification** on the input side and **What This Repo Proves: From 'I Built an AI Thing' to a Pitch Deck Brokers Read** at the end. Each phase is listed in the Implementation section below.
@@ -83,9 +89,6 @@ flowchart LR
 
     Contacts -- "warm list for" --> Pitch
     Pitch -- "sent + status updated in" --> Contacts
-class GCP,Contacts datastore
-class README,Econ,ROI,Compliance,ADR,Pitch,CRMs,TREC,FCC,Austin io
-
     class GCP,Contacts datastore
     class Claude,Git,TF,Spinup,Teardown,CostCheck service
     class README,Econ,ROI,Compliance,ADR,Pitch,CRMs,TREC,FCC,Austin io
@@ -111,7 +114,7 @@ For the full walkthrough with screenshots and step-by-step content, see [`docume
 
 ## Validation
 
-Build outcomes verified end-to-end. Each phase below is captured with screenshots, configuration, and observable behavior in [`documents/broker-lead-qualification-repo.md`](./documents/broker-lead-qualification-repo.md):
+Each build phase below is documented in [`documents/broker-lead-qualification-repo.md`](./documents/broker-lead-qualification-repo.md), with screenshots, configuration, and notes as captured during the build:
 
 - ✅ Building the Foundation: Repo Structure and Tool Verification
 - ✅ Crafting the Broker-Facing README That Sells in 20 Seconds
