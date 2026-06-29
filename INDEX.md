@@ -13,3 +13,4 @@ Solutions and strategy engineered for small and growing business operators.
 | 3 | [Build an AI Product Design Studio](./systems/agent-design-studio/) | 2026-05-25 | 2026-05-25 | AI · Quality-Controlled · MCP |
 | 4 | [Build a Self-Running AI Networking Engine](./systems/agent-connection-council/) | 2026-06-07 | 2026-06-07 | Self-Running · AI · Bot-Protected · Mobile-First |
 | 5 | [Agentic Bilingual Kids Video Pipeline](./systems/agent-bilingual-kids-video-pipeline/) | 2026-06-20 | 2026-06-20 | Multi-Stage · Three-Format · EP001 |
+| 6 | [Build an Agentic Graphic Studio Engine](./systems/agentic-graphic-studio-engine/) | 2026-06-29 | 2026-06-29 | 28-Agent · 8-Team · Confidence-Gated · Brand-Identity |

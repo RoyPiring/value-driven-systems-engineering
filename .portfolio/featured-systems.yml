@@ -1,45 +1,117 @@
 lens: value-driven-systems-engineering
 featured_enabled: auto
 threshold: 1
-scored_at: '2026-05-18'
+scored_at: '2026-06-29'
 human_pin: []
 systems:
-- slug: broker-lead-qualification-repo
-  axis_scores:
-    technical_depth: 7
-    voice: 6
-    validation: 6
-  axis_reasoning:
-    technical_depth: Nine-phase build with five-subgraph Mermaid that names real regulators
-      (TREC 535.154-155, FCC 1-to-1 Consent) and concrete inputs ($455K @ 2.85%),
-      but infrastructure is explicitly never-applied Terraform stubs so production-shape
-      is partial.
-    voice: README is direct and ROI-first, yet the supporting doc repeats `Pilot outreach
-      introduces real-world validation` verbatim across three phases and `The economics
-      primer establishes a clear cost comparison` twice, which dilutes specificity.
-    validation: Validation section is a nine-item checkmark list pointing at one document;
-      each phase has at least one screenshot, but evidence is presented as image links
-      without per-phase verification text.
-  average: 6.33
-  rationale: ROI worksheet plus TREC and FCC compliance posture sized for a non-technical
-    broker buyer
-  featured: true
-- slug: hipaa-ai-intake-system
+- slug: agent-bilingual-kids-video-pipeline
   axis_scores:
     technical_depth: 8
     voice: 7
     validation: 6
   axis_reasoning:
-    technical_depth: Eight-phase design with five-subgraph diagram that draws the
-      rejected OpenAI path as a blocked edge and ties a $100/provider cost-check event
-      into the intake service, showing the BAA boundary as a real architectural constraint.
-    voice: 'Names concrete decisions and tradeoffs (`Bedrock under BAA`, `OpenAI rejected:
-      no BAA`, synthetic-data-only prompts) and admits gaps honestly (`a few expected
-      artifacts are missing`), matching the brand bio cleanly.'
-    validation: Validation is a phase checklist plus screenshots, but the doc itself
-      states `no outreach has been sent` and the file count is `mostly complete`,
-      so end-to-end evidence is honest about partial coverage.
+    technical_depth: The 26-agent, 6-team pipeline with 4 MCP servers, three video
+      formats over a shared cultural-moments.yaml backbone, and an A5+B4+Codex triple-check
+      is a production-shape design with a diagram that names real components and edges.
+    voice: Direct and specific on the TTS and cultural-immersion decisions, though
+      the phase-narration paragraphs carry some generic learning-system filler.
+    validation: Each phase is checked off and a triple-check verdict is described,
+      but the doc openly hedges ('subjective audio quality cannot be independently
+      verified') and shows narration rather than linked run artifacts.
   average: 7.0
-  rationale: BAA-gated architecture with PHI-safe prompt library and $100/provider
-    cost ceiling
+  rationale: 26-agent cultural-immersion pipeline with a shared YAML backbone and
+    triple-check authenticity gate
+  featured: true
+- slug: agent-connection-council
+  axis_scores:
+    technical_depth: 8
+    voice: 8
+    validation: 6
+  axis_reasoning:
+    technical_depth: A QR-to-email pipeline with Supabase RLS, a pg_net pending-to-approved
+      trigger that pulls the Resend credential from Vault, six ADRs, and a self-healing
+      PWA monitor is a real production architecture with clear data flow.
+    voice: Sharp and decision-led, naming the Supabase-over-Firebase reversal cost
+      and the human-approval gate without marketing filler.
+    validation: The phases are documented and a full end-to-end pipeline phase exists,
+      but the evidence is design narrative with screenshots rather than measured reply-rate
+      or delivery runs.
+  average: 7.3
+  rationale: QR-to-email engine with a pg_net approval trigger and a human gate before
+    any send
+  featured: true
+- slug: agent-design-studio
+  axis_scores:
+    technical_depth: 8
+    voice: 7
+    validation: 8
+  axis_reasoning:
+    technical_depth: A 25-agent studio with a 7-of-10 approval gate, three parallel
+      Claude sessions, a Continuous Intelligence layer with Canon promotion, and a
+      Gemini adversarial bias check is a production-shape governed delivery system.
+    voice: Generally specific about the gate mechanics, though the overview leans
+      on phrases like 'scalable system' and 'tightening delivery efficiency' that
+      read as filler.
+    validation: 'Strong: named composite scores (7.33 APPROVED, 8.75 SEND), an 8.14
+      baseline, 14% rework rate, reviewer variance within 0.06, and a $9K proposal
+      outcome are concrete.'
+  average: 7.7
+  rationale: Governed design pipeline where every artifact clears a 7-of-10 gate,
+    scored to a $9K outcome
+  featured: true
+- slug: agentic-graphic-studio-engine
+  axis_scores:
+    technical_depth: 9
+    voice: 9
+    validation: 9
+  axis_reasoning:
+    technical_depth: A 28-agent, 8-team engine with confidence gates, a 3-round scoring
+      cap, component isolation that keeps each asset byte-for-byte, and a diagram
+      with named gate verdicts on every edge is a reference-grade design with failure
+      modes shown.
+    voice: Sharp and free of marketing verbs; the component-isolation and layered-editing-vs-re-prompting
+      passages teach the tradeoff directly and own every decision.
+    validation: 'Each gate is validated with concrete numbers: RESEARCH_COMPLETE FAIL
+      at 7.5/10 (8/8/7/7) recorded as a documented exception, review moving 6.0 to
+      6.7 to 7.0, DELIVERY_GATE 8/8 verified programmatically with both PNGs confirmed
+      at 300 DPI.'
+  average: 9.0
+  rationale: Named gate verdicts and component isolation that keeps every approved
+    asset byte-for-byte
+  featured: true
+- slug: broker-lead-qualification-repo
+  axis_scores:
+    technical_depth: 4
+    voice: 4
+    validation: 4
+  axis_reasoning:
+    technical_depth: A docs-only broker artifact with never-applied Terraform stubs
+      and shell scripts; the diagram maps documents and external benchmarks rather
+      than a running system.
+    voice: Generic and repetitive, with the same paragraphs duplicated across sections
+      and filler lines like 'Tracking outreach creates accountability.'
+    validation: Validation is phase checkboxes over a pitch artifact; the strongest
+      concrete point is the Austin ROI math, but no system run or measured outcome
+      is shown.
+  average: 4.0
+  rationale: Broker-facing repo that leads with CRM-pricing gap and Austin ROI math
+    over architecture
+  featured: false
+- slug: hipaa-ai-intake-system
+  axis_scores:
+    technical_depth: 5
+    voice: 6
+    validation: 5
+  axis_reasoning:
+    technical_depth: A HIPAA-aware scaffold with a Bedrock-under-BAA decision, synthetic-data-only
+      prompt guardrails, and OpenAI rejected for lack of a BAA, but it is repo structure
+      and stubs rather than a built intake service.
+    voice: Honest and clear about posture, explicitly listing gaps and refusing to
+      overclaim, with only light generic phrasing.
+    validation: 'Partial and self-aware: the 18-file checklist and Mermaid render
+      are verified, but the doc states outreach has not been sent and the log is empty,
+      so the chain stops at scaffold.'
+  average: 5.3
+  rationale: HIPAA scaffold that rejects OpenAI for no BAA and names its own compliance
+    gaps honestly
   featured: true
