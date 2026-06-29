@@ -25,95 +25,132 @@ flowchart LR
     classDef event fill:#7B42BC,stroke:#F4D03F,stroke-width:2px,color:#FFFFFF
     classDef io fill:#0d1117,stroke:#F4D03F,stroke-width:1.5px,color:#F4D03F,font-style:italic
 
-    subgraph Input["Input"]
-        Request[/Brand Identity Request/]
-    end
+    Client[/SMB Client - brand identity request/]
+    Package[/Brand Identity Package - client handoff/]
 
     subgraph Orchestration["Orchestration - Claude Code"]
-        Orch(orchestrator.md - confidence gates + iteration caps)
-        Operator{{Operator-in-the-Loop Review}}
+        Orch(orchestrator.md)
+        ConfGate{{Confidence Gate - 0.7 threshold}}
+        IterCap{{Iteration Caps}}
+        Operator{{Operator-in-the-Loop}}
         Mcp[(.mcp.json - Firecrawl MCP)]
     end
 
     subgraph Workspace["Workspace - agentic-studio, 28 agents in 8 teams"]
         TeamDirs[(8 Team Directories)]
-        RunLogs[(Run Logs + Antigravity Cockpit)]
+        RunLogs[(Run Logs - Antigravity Cockpit)]
+        Council(Design Council 6.0 to 6.7 to 7.0)
     end
 
-    subgraph Research["Research Team"]
+    subgraph ResearchTeam["1. Research Team"]
         Scanner(competitor-scanner agent)
         Firecrawl(Firecrawl - scrape competitors)
+        GemGem(Gemini Gem - synthesize intelligence)
         Dossier[(Research Dossier)]
     end
-    ResearchGate{{RESEARCH_COMPLETE - 7.5 of 10, documented exception}}
+    ResearchGate{{RESEARCH_COMPLETE - 7.5/10 documented exception}}
 
-    subgraph BriefConcept["Brief + Concept Teams"]
-        BriefAgent(Brief team - creative brief)
-        Concepts(Three Concept Directions)
+    subgraph BriefTeam["2. Brief Team"]
+        BriefAgent(Creative Brief)
+    end
+
+    subgraph ConceptTeam["3. Concept Team - 3 directions"]
+        Totality(A - Totality)
+        QuietEmber(B - Quiet Ember)
+        EmberHour(C - Ember Hour)
     end
     ConceptGate{{CONCEPT_GATE - Ember Hour locked}}
 
-    subgraph Generation["Generation Team - multi-model, component isolation"]
-        ChatGPT(ChatGPT Pro - icon + background)
-        Gemini(Gemini Nano Banana Pro - wordmark)
-        Components[(Isolated Component Files)]
+    subgraph GenerationTeam["4. Generation Team - multi-model, component isolation"]
+        ChatGPT(ChatGPT Pro)
+        Gemini(Gemini Nano Banana Pro)
+        Icon[(Icon - isolated file)]
+        Wordmark[(Wordmark - isolated file)]
+        Background[(Background - isolated file)]
     end
 
-    subgraph ReviewTeam["Review Team - 0.7 threshold"]
+    subgraph ReviewTeam["5. Review Team - 0.7 threshold"]
         ScoreLoop(Scoring Loop - 3-round cap)
     end
     ReviewGate{{REVIEW_GATE - 6 or higher passes}}
 
-    subgraph Refinement["Refinement Team"]
-        Photopea(Photopea + Inkscape - asset cleanup)
+    subgraph RefinementTeam["6. Refinement Team"]
+        Photopea(Photopea - raster cleanup)
+        Inkscape(Inkscape - vector cleanup)
         FigmaLib[(Figma Component Library)]
         Canva(Canva - final lockup)
     end
 
-    subgraph DeliveryTeam["Production + Delivery Team"]
+    subgraph ProductionTeam["7. Production Team"]
+        Export(300 DPI + vector export)
+        PngAssets[(2 PNGs - 300 DPI)]
+        SvgAssets[(3 SVGs - plain vector)]
+        Guidelines[(Brand Guidelines)]
+        PrintSpec[(Print Specifications)]
+        Provenance[(IP Provenance Disclosure)]
+    end
+
+    subgraph DeliveryTeam["8. Delivery Team"]
         Checklist(delivery-checklist agent)
-        Package[(Delivery Package - 300 DPI, vectors, IP provenance)]
     end
     DeliveryGate{{DELIVERY_GATE - 8 of 8 verified}}
 
-    subgraph Outputs["Outputs"]
-        Assets[/2 PNGs + 3 SVGs + 3 Docs/]
-    end
-
-    Request -->|kick off build| Orch
+    Client -->|kick off build| Orch
     Orch -->|register handoff contracts| TeamDirs
     Orch -->|record gate verdicts| RunLogs
+    Orch -->|enforces| ConfGate
+    Orch -->|enforces| IterCap
     Operator -.->|approves handoffs| Orch
-    Mcp -->|web search + scrape| Firecrawl
+    Mcp -->|web tools for| Firecrawl
+    ConfGate -.->|gates every handoff| ResearchGate
+    RunLogs -->|per-round scores| Council
 
     Orch -->|dispatch research wave| Scanner
     Scanner -->|competitor identities| Firecrawl
-    Firecrawl -->|brand + market data| Dossier
+    Firecrawl -->|raw market data| GemGem
+    GemGem -->|structured brand intelligence| Dossier
     Dossier -->|score the evidence| ResearchGate
     ResearchGate -->|exception recorded, proceed| BriefAgent
 
-    BriefAgent -->|structured brief| Concepts
-    Concepts -->|judge against brief| ConceptGate
+    BriefAgent -->|direction A| Totality
+    BriefAgent -->|direction B| QuietEmber
+    BriefAgent -->|direction C| EmberHour
+    Totality -->|judged vs brief| ConceptGate
+    QuietEmber -->|judged vs brief| ConceptGate
+    EmberHour -->|selected| ConceptGate
+
     ConceptGate -->|locked direction| ChatGPT
     ConceptGate -->|locked direction| Gemini
-
-    ChatGPT -->|icon + background files| Components
-    Gemini -->|wordmark file| Components
-    Components -->|per-component scoring| ScoreLoop
+    ChatGPT -->|generates| Icon
+    ChatGPT -->|generates| Background
+    Gemini -->|generates| Wordmark
+    Icon -->|per-component score| ScoreLoop
+    Wordmark -->|per-component score| ScoreLoop
+    Background -->|per-component score| ScoreLoop
     ScoreLoop -->|cap at 3 rounds| ReviewGate
-    ReviewGate -->|approved components| Photopea
 
-    Photopea -->|cleaned assets| FigmaLib
+    ReviewGate -->|approved raster| Photopea
+    ReviewGate -->|approved vector| Inkscape
+    Photopea -->|cleaned icon| FigmaLib
+    Inkscape -->|cleaned wordmark| FigmaLib
     FigmaLib -->|controlled parts| Canva
-    Canva -->|composited lockup| Checklist
-    Checklist -->|programmatic audit| Package
-    Package -->|verify against spec| DeliveryGate
-    DeliveryGate -->|client handoff| Assets
+    Canva -->|composited lockup| Export
 
-    class TeamDirs,RunLogs,Mcp,Dossier,Components,FigmaLib,Package datastore
-    class Orch,Scanner,Firecrawl,BriefAgent,Concepts,ChatGPT,Gemini,ScoreLoop,Photopea,Canva,Checklist service
-    class Operator,ResearchGate,ConceptGate,ReviewGate,DeliveryGate event
-    class Request,Assets io
+    Export -->|raster output| PngAssets
+    Export -->|vector output| SvgAssets
+    Export -->|writes| Guidelines
+    Export -->|writes| PrintSpec
+    Export -->|writes| Provenance
+    PngAssets -->|audited by| Checklist
+    SvgAssets -->|audited by| Checklist
+    Guidelines -->|audited by| Checklist
+    Checklist -->|programmatic audit| DeliveryGate
+    DeliveryGate -->|client handoff| Package
+
+    class Mcp,TeamDirs,RunLogs,Dossier,Icon,Wordmark,Background,FigmaLib,PngAssets,SvgAssets,Guidelines,PrintSpec,Provenance datastore
+    class Orch,Firecrawl,Scanner,GemGem,BriefAgent,Totality,QuietEmber,EmberHour,ChatGPT,Gemini,ScoreLoop,Photopea,Inkscape,Canva,Export,Council,Checklist service
+    class ConfGate,IterCap,Operator,ResearchGate,ConceptGate,ReviewGate,DeliveryGate event
+    class Client,Package io
 ```
 
 The diagram shows the topology and data flow of the system as built. The full architectural narrative, with screenshots and prose, lives in [`documents/agentic-graphic-studio-engine.md`](./documents/agentic-graphic-studio-engine.md).
