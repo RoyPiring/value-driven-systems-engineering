@@ -1,6 +1,6 @@
 # Value-Driven Systems Engineering
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-1B4332?style=flat-square&labelColor=0d1117)](./LICENSE) [![Systems](https://img.shields.io/badge/systems-6-2F5233?style=flat-square&labelColor=0d1117)](./INDEX.md) [![Updated](https://img.shields.io/badge/updated-2026--06--29-264653?style=flat-square&labelColor=0d1117)](./INDEX.md)
+[![License: MIT](https://img.shields.io/badge/license-MIT-1B4332?style=flat-square&labelColor=0d1117)](./LICENSE) [![Systems](https://img.shields.io/badge/systems-7-2F5233?style=flat-square&labelColor=0d1117)](./INDEX.md) [![Updated](https://img.shields.io/badge/updated-2026--07--21-264653?style=flat-square&labelColor=0d1117)](./INDEX.md)
 
 > *What does a small-to-medium business operator pay for?*
 
@@ -23,12 +23,12 @@ Customer-paid solutions and strategy for the operators of small and growing busi
 
 ## Featured Systems
 
-- **[Agentic Bilingual Kids Video Pipeline](./systems/agent-bilingual-kids-video-pipeline/)**: 26-agent cultural-immersion pipeline with a shared YAML backbone and triple-check authenticity gate
-- **[Build a Self-Running AI Networking Engine](./systems/agent-connection-council/)**: QR-to-email engine with a pg_net approval trigger and a human gate before any send
-- **[Build an AI Product Design Studio](./systems/agent-design-studio/)**: Governed design pipeline where every artifact clears a 7-of-10 gate, scored to a $9K outcome
-- **[Build an Agentic Graphic Studio Engine](./systems/agentic-graphic-studio-engine/)**: Named gate verdicts and component isolation that keeps every approved asset byte-for-byte
-- **[Build a HIPAA-Aware AI Intake System](./systems/hipaa-ai-intake-system/)**: HIPAA scaffold that rejects OpenAI for no BAA and names its own compliance gaps honestly
+- **[After-Hours Voice Agent for a Plumber](./systems/after-hours-voice-agent-plumber/)**: Emergency-first triage with idempotent CallSID writes and an honest failed-release verdict
+- **[Agentic Bilingual Kids Video Pipeline](./systems/agent-bilingual-kids-video-pipeline/)**: One cultural-moments.yaml source feeds three video formats, checked by Codex adversarial review
+- **[Build a Self-Running AI Networking Engine](./systems/agent-connection-council/)**: Human-approval gate wired into a pg_net database trigger with RLS and second-touch recovery
+- **[Build an AI Product Design Studio](./systems/agent-design-studio/)**: A 7-of-10 approval gate with per-axis scorecards and reviewer variance under 0.06
+- **[Build an Agentic Graphic Studio Engine](./systems/agentic-graphic-studio-engine/)**: Component isolation keeps assets gate-able, verified by a programmatic 8-of-8 delivery audit
 
-_+ 1 other system in the full catalog: [`INDEX.md`](./INDEX.md)._
+_+ 2 other systems in the full catalog: [`INDEX.md`](./INDEX.md)._
 
 

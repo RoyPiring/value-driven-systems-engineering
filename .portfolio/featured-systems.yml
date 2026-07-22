@@ -1,44 +1,66 @@
 lens: value-driven-systems-engineering
 featured_enabled: auto
 threshold: 1
-scored_at: '2026-06-29'
+scored_at: '2026-07-21'
 human_pin: []
 systems:
+- slug: after-hours-voice-agent-plumber
+  axis_scores:
+    technical_depth: 9
+    voice: 9
+    validation: 8
+  axis_reasoning:
+    technical_depth: The Mermaid diagram carries eight labeled subgraphs from advisory
+      revenue model through triage, emergency paging, idempotent CallSID writes, and
+      a release gate, naming real edges and failure paths.
+    voice: The prose is direct and owns its limits, separating the $4,200 directly
+      measured from the $163,440 estimate and stating plainly that emergency escalation
+      only reached 5 of 12.
+    validation: The 45-call seeded acceptance test sets zero-tolerance per-category
+      bars and reports the actual failure, backed by a replay proof where three retries
+      collapse to one job and one ledger row, though live Vapi and Twilio paths stayed
+      unverified.
+  average: 8.67
+  rationale: Emergency-first triage with idempotent CallSID writes and an honest failed-release
+    verdict
+  featured: true
 - slug: agent-bilingual-kids-video-pipeline
   axis_scores:
     technical_depth: 8
     voice: 7
-    validation: 6
+    validation: 7
   axis_reasoning:
-    technical_depth: The 26-agent, 6-team pipeline with 4 MCP servers, three video
-      formats over a shared cultural-moments.yaml backbone, and an A5+B4+Codex triple-check
-      is a production-shape design with a diagram that names real components and edges.
-    voice: Direct and specific on the TTS and cultural-immersion decisions, though
-      the phase-narration paragraphs carry some generic learning-system filler.
-    validation: Each phase is checked off and a triple-check verdict is described,
-      but the doc openly hedges ('subjective audio quality cannot be independently
-      verified') and shows narration rather than linked run artifacts.
-  average: 7.0
-  rationale: 26-agent cultural-immersion pipeline with a shared YAML backbone and
-    triple-check authenticity gate
+    technical_depth: The pipeline routes one cultural-moments.yaml source into three
+      render formats (Remotion, Nano Banana, InstaDoodle) over a shared backbone with
+      a named TTS onnx voice, four MCP servers, and ADR-001 through ADR-011.
+    voice: Writing stays honest about unproven parts (Whisper validation not completed,
+      audio quality unverifiable without human listening), but several passages repeat
+      generic phrasing about raising consistency and maintainability.
+    validation: Render tests surface concrete defects (scene sync gaps, placeholder
+      imagery) and a Codex adversarial pass plus an A5-B4-Codex triple-check add rigor,
+      yet the evidence stays qualitative with no numeric pass bars.
+  average: 7.33
+  rationale: One cultural-moments.yaml source feeds three video formats, checked by
+    Codex adversarial review
   featured: true
 - slug: agent-connection-council
   axis_scores:
-    technical_depth: 8
+    technical_depth: 9
     voice: 8
-    validation: 6
+    validation: 7
   axis_reasoning:
-    technical_depth: A QR-to-email pipeline with Supabase RLS, a pg_net pending-to-approved
-      trigger that pulls the Resend credential from Vault, six ADRs, and a self-healing
-      PWA monitor is a real production architecture with clear data flow.
-    voice: Sharp and decision-led, naming the Supabase-over-Firebase reversal cost
-      and the human-approval gate without marketing filler.
-    validation: The phases are documented and a full end-to-end pipeline phase exists,
-      but the evidence is design narrative with screenshots rather than measured reply-rate
-      or delivery runs.
-  average: 7.3
-  rationale: QR-to-email engine with a pg_net approval trigger and a human gate before
-    any send
+    technical_depth: The build wires Cloudflare Pages, Turnstile, and Workers to a
+      Supabase schema with Row Level Security and a pg_net trigger that fires on pending-to-approved,
+      plus a stale_sends view for the day-7 second touch.
+    voice: Section headers like 'A database that acts the moment Marcus approves'
+      are concrete and on-brand, and ADR-002 names the medium reversal cost of Supabase
+      over Firebase.
+    validation: The final phase claims nine-point end-to-end compliance and health
+      verification with screenshots, but the reply-rate thresholds are design targets
+      rather than measured runs.
+  average: 8.0
+  rationale: Human-approval gate wired into a pg_net database trigger with RLS and
+    second-touch recovery
   featured: true
 - slug: agent-design-studio
   axis_scores:
@@ -46,72 +68,73 @@ systems:
     voice: 7
     validation: 8
   axis_reasoning:
-    technical_depth: A 25-agent studio with a 7-of-10 approval gate, three parallel
-      Claude sessions, a Continuous Intelligence layer with Canon promotion, and a
-      Gemini adversarial bias check is a production-shape governed delivery system.
-    voice: Generally specific about the gate mechanics, though the overview leans
-      on phrases like 'scalable system' and 'tightening delivery efficiency' that
-      read as filler.
-    validation: 'Strong: named composite scores (7.33 APPROVED, 8.75 SEND), an 8.14
-      baseline, 14% rework rate, reviewer variance within 0.06, and a $9K proposal
-      outcome are concrete.'
-  average: 7.7
-  rationale: Governed design pipeline where every artifact clears a 7-of-10 gate,
-    scored to a $9K outcome
+    technical_depth: A 25-agent council runs across three parallel sessions behind
+      a 7-of-10 approval protocol with per-agent scoring dimensions, an intake quality
+      gate, and a Continuous Intelligence layer feeding an Improvement Velocity Dashboard.
+    voice: Concrete design feedback lands ('Identity should survive through proportion
+      rather than fragile detail'), but stretches of governance framing stay generic
+      about delivery efficiency and scalable systems.
+    validation: 'Validation is numeric: composite scores from 7.33 to 9.0 across 14
+      artifacts and 52 dimensions, a 14% rework rate, and reviewer agreement within
+      0.06 variance, though the council scores its own simulated-client outputs.'
+  average: 7.67
+  rationale: A 7-of-10 approval gate with per-axis scorecards and reviewer variance
+    under 0.06
   featured: true
 - slug: agentic-graphic-studio-engine
   axis_scores:
-    technical_depth: 9
-    voice: 9
-    validation: 9
+    technical_depth: 8
+    voice: 8
+    validation: 8
   axis_reasoning:
-    technical_depth: A 28-agent, 8-team engine with confidence gates, a 3-round scoring
-      cap, component isolation that keeps each asset byte-for-byte, and a diagram
-      with named gate verdicts on every edge is a reference-grade design with failure
-      modes shown.
-    voice: Sharp and free of marketing verbs; the component-isolation and layered-editing-vs-re-prompting
-      passages teach the tradeoff directly and own every decision.
-    validation: 'Each gate is validated with concrete numbers: RESEARCH_COMPLETE FAIL
-      at 7.5/10 (8/8/7/7) recorded as a documented exception, review moving 6.0 to
-      6.7 to 7.0, DELIVERY_GATE 8/8 verified programmatically with both PNGs confirmed
-      at 300 DPI.'
-  average: 9.0
-  rationale: Named gate verdicts and component isolation that keeps every approved
-    asset byte-for-byte
+    technical_depth: The engine defines 28 agents across 8 teams behind named confidence
+      gates, with component isolation storing icon, wordmark, and background as separate
+      files so refinement cannot silently redraw approved assets.
+    voice: The layered-editing-versus-re-prompting passage teaches the design reason
+      for component isolation ('byte-for-byte intact'), though one research-gate line
+      still reads as a lightly-edited paste ('under your 10/10 bar').
+    validation: The DELIVERY_GATE passes 8 of 8 with PNGs confirmed at 300 DPI and
+      SVGs checked for zero embedded rasters, and the research gate FAIL at 7.5 is
+      recorded as a documented exception.
+  average: 8.0
+  rationale: Component isolation keeps assets gate-able, verified by a programmatic
+    8-of-8 delivery audit
   featured: true
 - slug: broker-lead-qualification-repo
   axis_scores:
     technical_depth: 4
     voice: 4
-    validation: 4
+    validation: 3
   axis_reasoning:
-    technical_depth: A docs-only broker artifact with never-applied Terraform stubs
-      and shell scripts; the diagram maps documents and external benchmarks rather
-      than a running system.
-    voice: Generic and repetitive, with the same paragraphs duplicated across sections
-      and filler lines like 'Tracking outreach creates accountability.'
-    validation: Validation is phase checkboxes over a pitch artifact; the strongest
-      concrete point is the Austin ROI math, but no system run or measured outcome
-      is shown.
-  average: 4.0
-  rationale: Broker-facing repo that leads with CRM-pricing gap and Austin ROI math
-    over architecture
+    technical_depth: The artifact is a docs-first pitch repo (README, economics primer,
+      ROI worksheet, ADR-001) whose Terraform and shell scripts are explicitly never
+      applied, so the diagram maps documents rather than a running system.
+    voice: 'The prose is generic and heavily repeated: the ''Pilot outreach introduces
+      real-world validation'' paragraph appears three times verbatim and the README
+      carries stray empty blocks.'
+    validation: The validation section is only a phase checklist with no shown worksheet
+      math, no provisioned infrastructure, and outreach status asserted rather than
+      evidenced.
+  average: 3.67
+  rationale: ROI-first broker pitch repo with never-applied Terraform stubs and repeated,
+    thin evidence
   featured: false
 - slug: hipaa-ai-intake-system
   axis_scores:
     technical_depth: 5
-    voice: 6
-    validation: 5
+    voice: 5
+    validation: 4
   axis_reasoning:
-    technical_depth: A HIPAA-aware scaffold with a Bedrock-under-BAA decision, synthetic-data-only
-      prompt guardrails, and OpenAI rejected for lack of a BAA, but it is repo structure
-      and stubs rather than a built intake service.
-    voice: Honest and clear about posture, explicitly listing gaps and refusing to
-      overclaim, with only light generic phrasing.
-    validation: 'Partial and self-aware: the 18-file checklist and Mermaid render
-      are verified, but the doc states outreach has not been sent and the log is empty,
-      so the chain stops at scaffold.'
-  average: 5.3
-  rationale: HIPAA scaffold that rejects OpenAI for no BAA and names its own compliance
-    gaps honestly
-  featured: true
+    technical_depth: The design is a scaffold repo with a real compliance spine (Bedrock
+      under BAA, OpenAI rejected for no BAA, synthetic-data prompt guardrails, a $100-per-provider
+      cost-check stub), but no intake logic is built.
+    voice: The HIPAA-posture writing is honest about listing controls and gaps, but
+      the document duplicates whole lines (the day-one warm-contacts heading and the
+      customer-first line each appear twice).
+    validation: Validation is an 18-file checklist and a Mermaid render check, and
+      the doc admits no outreach was sent and the log is empty, so nothing exercises
+      the AI system itself.
+  average: 4.67
+  rationale: BAA-gated Bedrock choice with synthetic-data prompt guardrails, but no
+    system built yet
+  featured: false

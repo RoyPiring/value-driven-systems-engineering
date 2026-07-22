@@ -14,3 +14,4 @@ Solutions and strategy engineered for small and growing business operators.
 | 4 | [Build a Self-Running AI Networking Engine](./systems/agent-connection-council/) | 2026-06-07 | 2026-06-07 | Self-Running · AI · Bot-Protected · Mobile-First |
 | 5 | [Agentic Bilingual Kids Video Pipeline](./systems/agent-bilingual-kids-video-pipeline/) | 2026-06-20 | 2026-06-20 | Multi-Stage · Three-Format · EP001 |
 | 6 | [Build an Agentic Graphic Studio Engine](./systems/agentic-graphic-studio-engine/) | 2026-06-29 | 2026-06-29 | 28-Agent · 8-Team · Confidence-Gated · Brand-Identity |
+| 7 | [After-Hours Voice Agent for a Plumber](./systems/after-hours-voice-agent-plumber/) | 2026-07-21 | 2026-07-21 | Voice-Agent · Revenue-Audit · Emergency-Triage · Attribution-Ledger |
