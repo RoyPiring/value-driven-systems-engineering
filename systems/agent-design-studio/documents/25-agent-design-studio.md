@@ -95,7 +95,7 @@ The governance layer introduced Council Lead, Standards Gate, Intelligence Agent
 
 The Approval Criteria system replaced generic reviews with agent-specific evaluation frameworks.
 
-Each agent received dedicated 1–10 scoring dimensions with explicit definitions describing acceptable execution within that role. Logo agents focused on composition, scalability, originality, and brand fit. Research agents evaluated market coverage, insight quality, and data freshness. Brief agents validated scope clarity, audience alignment, and delivery readiness.
+Each agent received dedicated 1-10 scoring dimensions with explicit definitions describing acceptable execution within that role. Logo agents focused on composition, scalability, originality, and brand fit. Research agents evaluated market coverage, insight quality, and data freshness. Brief agents validated scope clarity, audience alignment, and delivery readiness.
 
 Every artifact entered the Artifact Approval Protocol before progressing downstream. Any dimension scoring below seven triggered rejection and routed the work back for refinement.
 
@@ -145,7 +145,7 @@ The review identified a scope, budget, and timeline mismatch. Requested delivera
 
 The process also surfaced hidden delivery dependencies. Regulatory review activities and possible external research requirements introduced more than 48 hours of additional effort that had not been operationally accounted for.
 
-A third finding involved stakeholder complexity. Instead of a single reviewer, the effective audience expanded to approximately 8–12 participants, increasing approval expectations and creating additional delivery pressure.
+A third finding involved stakeholder complexity. Instead of a single reviewer, the effective audience expanded to approximately 8-12 participants, increasing approval expectations and creating additional delivery pressure.
 
 This early validation prevented execution from starting with unresolved constraints and tightened planning accuracy before production work began.
 
@@ -187,7 +187,7 @@ Approved concepts then transitioned into proposal packaging and delivery prepara
 
 ### Iteration that raised the score
 
-The largest refinement cycle occurred on Concept C – Salsa Mark, where Scalability scored 6/10, becoming the only failing dimension.
+The largest refinement cycle occurred on Concept C, Salsa Mark, where Scalability scored 6/10, becoming the only failing dimension.
 
 Feedback focused on design principle rather than visual preference: “Identity should survive through proportion rather than fragile detail.”
 
@@ -244,7 +244,7 @@ The engagement also generated multiple intelligence candidates for future Canon 
 
 ### Strongest and weakest axes across all clients
 
-Across the three simulated engagements, the strongest dimensions consistently appeared around Negative Space, Touch Parity, Token Discipline, Accessibility, Audience Fit, and Local Relevance, frequently reaching 9–10 scores with minimal refinement.
+Across the three simulated engagements, the strongest dimensions consistently appeared around Negative Space, Touch Parity, Token Discipline, Accessibility, Audience Fit, and Local Relevance, frequently reaching 9-10 scores with minimal refinement.
 
 Negative Space performed strongest because concepts prioritized silhouette recognition and structural balance over decorative detail. Audience Fit also scored highly due to the intake process, Austin-based research, and scoring framework creating stronger alignment between business goals and visual direction.
 
